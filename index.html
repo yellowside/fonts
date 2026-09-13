@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>冰豆字体导航 - 免费可商用字体下载</title>
+<meta name="description" content="冰豆字体导航分享最新的免费可商用字体下载。">
+<meta name="Keywords" content="字体下载,中文字体,英文字体,手写字体,免费字体下载,免费商用字体,免版权字体,无版权字体">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif;}
+body {background-color:#f5f6fa;color:#333;line-height:1.6;}
+a {text-decoration:none;color:inherit;}
+ul,ol,dl {list-style:none;}
+.container {width:100%;max-width:1500px;margin:0 auto;padding:0 15px;}
+.row {display:flex;flex-wrap:wrap;margin:0 -15px;}
+.col-md-1,.col-md-11 {padding:0 15px;}
+.col-md-1 {width:8.333%;}
+.col-md-11 {width:91.666%;}
+/*头部样式*/
+.site-header {position:relative;background:linear-gradient(135deg,#4299e1,#38b2ac);color:#fff;text-align:center;padding-top:40px;overflow:hidden;}
+.box-text h1 {font-size:2.2rem;margin-bottom:5px;text-shadow:0 2px 4px rgba(0,0,0,0.1);}
+.box-text p {font-size:1.1rem;opacity:0.9;}
+.waves {position:relative;width:100%;height:10vh;margin-bottom:-7px;min-height:60px;max-height:60px;}
+.parallax > use {animation:move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;}
+.parallax > use:nth-child(1) {animation-delay:-2s;animation-duration:7s;}
+.parallax > use:nth-child(2) {animation-delay:-3s;animation-duration:10s;}
+.parallax > use:nth-child(3) {animation-delay:-4s;animation-duration:13s;}
+.parallax > use:nth-child(4) {animation-delay:-5s;animation-duration:20s;}
+@keyframes move-forever {0% {transform:translate3d(-90px,0,0);}
+100% {transform:translate3d(85px,0,0);}
+}
+@media (max-width:768px) {.waves {height:40px;min-height:40px;}
+}
+/*侧边栏样式*/
+.sidebar {position:sticky;top:30px;align-self:flex-start;height:fit-content;}
+.content-sidebar {background:#fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.05);padding:15px 0;}
+#goto dt {padding:0 15px 10px;border-bottom:1px solid #f0f0f0;margin-bottom:10px;font-weight:bold;color:#4299e1;}
+#goto dd {padding:8px 15px;transition:all 0.3s ease;}
+#goto dd:hover,#goto dd.current {background:#f0f7ff;color:#4299e1;}
+#goto dd a {display:block;width:100%;}
+/*主内容区样式*/
+.content {padding:30px 0;}
+.part-cat-block {background:#fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.05);margin-bottom:30px;overflow:hidden;}
+.c-title {padding:15px 20px;border-bottom:1px solid #f0f0f0;display:flex;justify-content:space-between;align-items:center;}
+.c-title .l strong {font-size:1.3rem;color:#2d3748;}
+.c-content {padding:20px;}
+.c-loop.flex {display:flex;flex-wrap:wrap;gap:20px;}
+.part-item-font {width:calc(16.666% - 17px);border:1px solid #f0f0f0;border-radius:8px;overflow:hidden;transition:all 0.3s ease;}
+.part-item-font:hover {transform:translateY(-5px);box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.item-thumb {width:100%;height:120px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;}
+.thumb-img img {width:100%;padding:0 10px;}
+.item-title {padding:12px 10px 5px;font-size:1rem;font-weight:600;}
+.item-desc {padding:0 10px 8px;font-size:0.85rem;color:#718096;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.item-tag {padding:0 10px 12px;}
+.tag {display:inline-block;padding:2px 8px;background:#e8f4f8;color:#4299e1;font-size:0.75rem;border-radius:12px;}
+/*加载状态样式*/
+.loading {width:100%;padding:60px 0;text-align:center;}
+.loading-spinner {width:40px;height:40px;margin:0 auto 15px;border:4px solid #f0f7ff;border-top:4px solid #4299e1;border-radius:50%;animation:spin 1s linear infinite;}
+@keyframes spin {0% {transform:rotate(0deg);}
+100% {transform:rotate(360deg);}
+}
+.error,.no-results {width:100%;padding:60px 0;text-align:center;color:#718096;font-size:1rem;}
+/*底部样式*/
+.footer-copyright {background:#2d3748;color:#a0aec0;padding:40px 0;margin-top:30px;}
+.footer-copyright .container p {text-align:center;margin-bottom:10px;font-size:0.9rem;}
+.footer-copyright a {color:#4299e1;margin:0 8px;transition:color 0.3s ease;}
+.footer-copyright a:hover {color:#38b2ac;}
+/*响应式样式*/
+@media (max-width:1200px) {.part-item-font {width:calc(20% - 16px);}
+}
+@media (max-width:992px) {.col-md-1 {width:100%;margin-bottom:20px;}
+.col-md-11 {width:100%;}
+.sidebar {position:static;top:auto;}
+.part-item-font {width:calc(25% - 15px);}
+}
+@media (max-width:768px) {.box-text h1 {font-size:2rem;}
+.part-item-font {width:calc(33.333% - 14px);}
+}
+@media (max-width:576px) {.part-item-font {width:calc(50% - 10px);}
+.c-title .l strong {font-size:1.1rem;}
+.footer-copyright .container p {font-size:0.8rem;}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+    <div class="box-text">
+        <h1>冰豆字体导航</h1>
+        <p>免费可商用字体下载</p>
+    </div>
+	<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#f5f6fa" />
+        </g>
+    </svg>
+</header>
+<!-- 内容区域 -->
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <!-- 侧边栏导航 -->
+            <div class="col-md-1 sidebar">
+                <div class="content-sidebar">
+                    <dl id="goto"></dl>
+                </div>
+            </div>
+
+            <!-- 主内容区 -->
+            <div class="col-md-11">
+                <!-- 黑体字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="black" data-title="黑体字体">
+                        <div class="l"><strong>黑体字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="heiti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 宋体字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="verdana" data-title="宋体字体">
+                        <div class="l"><strong>宋体字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="songti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 楷体字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="kaiti" data-title="楷体字体">
+                        <div class="l"><strong>楷体字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="kaiti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 圆体字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="yuanti" data-title="圆体字体">
+                        <div class="l"><strong>圆体字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="yuanti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 手写字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="shouxie" data-title="手写字体">
+                        <div class="l"><strong>手写字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="shouxieti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 书法字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="shufa" data-title="书法字体">
+                        <div class="l"><strong>书法字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="shufati-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 创意字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="chuangyi" data-title="创意字体">
+                        <div class="l"><strong>创意字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="chuangyiti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡通字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="katong" data-title="卡通字体">
+                        <div class="l"><strong>卡通字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="katongti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 复古字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="fugu" data-title="复古字体">
+                        <div class="l"><strong>复古字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="fuguti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 潮流文艺 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="chaoliu" data-title="潮流文艺">
+                        <div class="l"><strong>潮流文艺</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="wenyiti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 简约现代 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="xiandai" data-title="简约现代">
+                        <div class="l"><strong>简约现代</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="xiandaiti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 英文字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="english" data-title="英文字体">
+                        <div class="l"><strong>英文字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="yingwenti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 日韩字体 -->
+                <div class="part-cat-block part-cat-block-font">
+                    <h2 class="c-title part" id="tihan" data-title="日韩字体">
+                        <div class="l"><strong>日韩字体</strong></div>
+                        <div class="r"></div>
+                    </h2>
+                    <div class="c-content">
+                        <div class="c-loop c-loop-font flex" id="rihanti-container">
+                            <div class="loading">
+                                <div class="loading-spinner"></div>
+                                <p>加载字体中...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer-copyright">
+    <div class="container">
+        <p>若您不满或您的授权声明不允许本站收录您的字体，则可以联系我们在字体导航中删除字体。</p>
+        <p><span><a href="https://bingdou.cc/" rel="nofollow">关于我们</a></span> <span><a href="https://api.bingdou.com.cn/qq/im/?qq=77696199" rel="nofollow">联系我们</a></span> <span><a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=77696199@qq.com" rel="nofollow">友情链接</a></span></p>
+        <p>© 2012-<script>document.write((new Date).getFullYear())</script> bingdou.com.cn, All Rights Reserved.</p>
+    </div>
+</footer>
+<script>
+    // 字体分类配置（与接口ID对应）
+    const fontCategories = [
+        { id: 'heiti', name: '黑体字体', containerId: 'heiti-container', titleId: 'black' },
+        { id: 'songti', name: '宋体字体', containerId: 'songti-container', titleId: 'verdana' },
+        { id: 'kaiti', name: '楷体字体', containerId: 'kaiti-container', titleId: 'kaiti' },
+        { id: 'yuanti', name: '圆体字体', containerId: 'yuanti-container', titleId: 'yuanti' },
+        { id: 'shouxieti', name: '手写字体', containerId: 'shouxieti-container', titleId: 'shouxie' },
+        { id: 'shufati', name: '书法字体', containerId: 'shufati-container', titleId: 'shufa' },
+        { id: 'chuangyiti', name: '创意字体', containerId: 'chuangyiti-container', titleId: 'chuangyi' },
+        { id: 'katongti', name: '卡通字体', containerId: 'katongti-container', titleId: 'katong' },
+        { id: 'fuguti', name: '复古字体', containerId: 'fuguti-container', titleId: 'fugu' },
+        { id: 'wenyiti', name: '潮流文艺', containerId: 'wenyiti-container', titleId: 'chaoliu' },
+        { id: 'xiandaiti', name: '简约现代', containerId: 'xiandaiti-container', titleId: 'xiandai' },
+        { id: 'yingwenti', name: '英文字体', containerId: 'yingwenti-container', titleId: 'english' },
+        { id: 'rihanti', name: '日韩字体', containerId: 'rihanti-container', titleId: 'tihan' }
+    ];
+
+    // API基础URL
+    const API_BASE = 'https://json.bingdou.com.cn/font/list/?id=';
+    const DEFAULT_THUMB = 'https://gh.bingdou.com.cn/gh/yellowside/jquery/img/thumb.jpg';
+
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', () => {
+        initApp();
+    });
+
+    // 初始化应用
+    async function initApp() {
+        generateSidebarNav();
+        await loadAllFontCategories();
+        initScrollHighlight();
+    }
+
+    // 生成侧边栏导航
+    function generateSidebarNav() {
+        const gotoContainer = document.getElementById('goto');
+        if (!gotoContainer) return;
+
+        const navHtml = ['<dt><span class="show-list">字体分类</span></dt>'];
+        
+        fontCategories.forEach(category => {
+            navHtml.push(`
+                <dd><a href="#${category.titleId}" class="auto-scroll" data-offset="-20">${category.name}</a></dd>
+            `);
+        });
+        
+        gotoContainer.innerHTML = navHtml.join('');
+    }
+
+    // 加载所有字体分类
+    async function loadAllFontCategories() {
+        const loadPromises = fontCategories.map(category => 
+            loadFontCategory(category.id, category.containerId)
+        );
+        
+        try {
+            await Promise.all(loadPromises);
+        } catch (error) {
+            console.error('加载字体分类时出错:', error);
+        }
+    }
+
+    // 加载单个字体分类数据
+    async function loadFontCategory(categoryId, containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        // 显示加载中状态
+        container.innerHTML = '<div class="loading">正在加载...</div>';
+
+        try {
+            const response = await fetch(`${API_BASE}${categoryId}`);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // 调试信息：在控制台打印返回的数据，方便检查
+            console.log(`API返回数据 (${categoryId}):`, data);
+            
+            // 更健壮的数据验证和渲染
+            let fontList = [];
+            if (data && data.data && Array.isArray(data.data.list)) {
+                fontList = data.data.list;
+            } else if (data && Array.isArray(data.list)) { // 兼容可能的数据结构
+                fontList = data.list;
+            }
+
+            if (fontList.length > 0) {
+                renderFontList(fontList, container);
+            } else {
+                // 如果数据为空或结构不符，显示无结果
+                container.innerHTML = '<div class="no-results">暂无字体数据</div>';
+            }
+
+        } catch (error) {
+            console.error(`加载${categoryId}字体失败:`, error);
+            // 提供更详细的错误信息给用户
+            let errorMessage = '加载数据失败，请检查网络连接或稍后重试。';
+            if (error.message.includes('Failed to fetch')) {
+                errorMessage = '网络请求被阻止(CORS)，请检查服务器配置或使用代理。';
+            }
+            container.innerHTML = `<div class="load-error">${errorMessage}</div>`;
+        }
+    }
+
+    // 渲染字体列表
+    function renderFontList(fonts, container) {
+        const fragment = document.createDocumentFragment();
+        
+        fonts.forEach(font => {
+            const fontItem = createFontItem(font);
+            fragment.appendChild(fontItem);
+        });
+        
+        container.innerHTML = '';
+        container.appendChild(fragment);
+    }
+
+    // 创建字体项元素
+    function createFontItem(font) {
+        const fontItem = document.createElement('div');
+        fontItem.className = 'part-item-font f-item p-item';
+        
+        const fontId = font.id || Math.random().toString(36).substr(2, 9);
+        const imgSrc = font.img || DEFAULT_THUMB;
+        const fontName = font.name || '未知字体';
+        const fontDesc = font.desc || '暂无描述';
+        const fontTag = font.tag || '免费商用';
+        
+        fontItem.innerHTML = `
+            <a class="f-box" href="./show/?id=${fontId}" target="_blank">
+                <div class="item-thumb bg-0">
+                    <i class="thumb thumb-img">
+                        <img src="${imgSrc}" alt="${fontName}" loading="lazy" />
+                    </i>
+                </div>
+                <h3 class="item-title"><strong class="title">${fontName}</strong></h3>
+                <div class="item-desc">${fontDesc}</div>
+                <div class="item-tag"><span class="tag tag-914809d0">${fontTag}</span></div>
+            </a>
+        `;
+        
+        return fontItem;
+    }
+
+    // 初始化滚动高亮
+    function initScrollHighlight() {
+        const parts = document.querySelectorAll('.part');
+        const navItems = document.querySelectorAll('#goto dd');
+        
+        if (!parts.length || !navItems.length) return;
+        
+        const throttledScroll = throttle(() => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            parts.forEach((part, index) => {
+                const partTop = part.offsetTop - 50;
+                const partBottom = partTop + part.offsetHeight;
+                
+                if (scrollTop >= partTop && scrollTop < partBottom) {
+                    navItems.forEach(item => item.classList.remove('current'));
+                    navItems[index]?.classList.add('current');
+                }
+            });
+        }, 100);
+        
+        window.addEventListener('scroll', throttledScroll);
+    }
+
+    // 节流函数
+    function throttle(func, delay) {
+        let timeoutId;
+        let lastExecTime = 0;
+        
+        return function(...args) {
+            const currentTime = Date.now();
+            
+            if (currentTime - lastExecTime > delay) {
+                func.apply(this, args);
+                lastExecTime = currentTime;
+            } else {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func.apply(this, args);
+                    lastExecTime = Date.now();
+                }, delay - (currentTime - lastExecTime));
+            }
+        };
+    }
+</script>
+<script async src="https://019e8b56-6966-7b85-88bf-0d5f23893662.spst2.com/ustat.js"></script>
+</body>
+</html>
